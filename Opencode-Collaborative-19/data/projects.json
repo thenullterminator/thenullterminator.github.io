@@ -18,7 +18,7 @@
         },
         {
             "name": "Competitive Coding",
-            "imageurl": "assets/img/projects/Competitive-Programming.jpg",
+            "imageurl": "assets/img/projects/Compcoding.jpg",
             "mentors": "Kumar Raju",
             "about": "A project aimed at encouraging the competitive coding skills of novices",
             "lang": "C++, Python, Java, C",
