@@ -354,6 +354,7 @@ input:checked + .slider:before {
 
 .pagination .active:hover{
   color: #fff;
+  z-index:-1;
 }
 
 
