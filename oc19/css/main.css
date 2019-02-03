@@ -5,16 +5,14 @@
  */
 
 
- .fix a{
-  z-index:-1;
-}
+ 
 
 
 
 .header {
   position: fixed;
   top: 78px;
-  z-index: 1;
+  
   width: 100%;
   background-color: #f1f1f1;
 }
@@ -42,6 +40,7 @@
 
 #mainNav {
   padding: 1em 0;
+ 
 }
 
 .header-overlay {
