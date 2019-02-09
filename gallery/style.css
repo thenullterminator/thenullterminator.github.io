@@ -1,0 +1,83 @@
+body{
+    background:black;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #aaa;
+    overflow-x:hidden;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline
+}
+.container{
+    width: 90vw;
+    margin: 5vw;
+    
+}
+img{
+    animation-duration: 4s;
+}
+
+.container .album{
+    width:1400px;
+    height:500px;
+    margin:0 auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(41,100px);
+    grid-template-areas: 
+        "one two thr"
+        "one two thr"
+        "fou two thr"
+        "fou fiv thr"
+        "fou fiv six"
+        "fou fiv six"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e14 e14 e14"
+        "e14 e14 e14"
+        "e14 e14 e14"
+        "e14 e14 e14"
+
+        "e15 e16 e17"
+        "e15 e16 e17"
+        "e15 e16 e20"
+        "e15 e19 e20"
+        "e18 e19 e20"
+        "e18 e19 e20"
+        "e21 e21 e22"
+        "e21 e21 e22"
+        "e21 e21 e22"
+        "e21 e21 e22"
+        "e23 e23 e22"
+        "e23 e23 e22"
+        "e23 e23 e22"
+        "e23 e23 e22"
+        "e24 e25 e26"
+        "e24 e25 e26"
+        "e24 e25 e26"
+        "e24 e25 e26"
+        ;
+    
+        
+
+}
+.container .img{
+    background: #333;
+    background-size: cover;
+    border:1px black solid;
+    border-radius:11px;
+}   
