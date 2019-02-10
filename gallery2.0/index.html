@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="myfunction()" id="bd" style="display:none;">
    
 
     <div id="sidebar" >
@@ -80,5 +80,25 @@
            
         </div>
     </div>
+
+
+    <script>
+    
+   function  myfunction()
+    {
+        setTimeout(abc,2000);
+    }
+
+function abc()
+{
+    document.getElementById("bd").style.display="block";
+}
+    
+    
+    </script>
+
+
+
+
 </body>
 </html>
