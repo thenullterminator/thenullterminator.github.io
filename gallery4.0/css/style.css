@@ -1,0 +1,142 @@
+body{
+    background:black;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: #aaa;
+    overflow-x:hidden;
+    
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline
+}
+.container{
+    width: 90vw;
+    margin: 5vw;
+    
+}
+
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 2s;
+    transform-style: preserve-3d;
+  }
+  
+   .flip-box-inner:hover {
+    transform: rotateY(180deg);
+  }
+
+
+ .flip-box-inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 5s;
+    transform-style: preserve-3d;
+    transform: rotateY(720deg);
+  }
+  
+
+
+
+
+
+a :hover{
+color:rgba(255, 136, 0, 0.938);
+}
+
+#sidebar
+{
+    background-color:rgb(15, 14, 14);
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:404px;
+    height:975px;
+    margin:0;
+    z-index:-1;
+}
+
+.container img{
+    animation-duration: 10s;
+}
+
+.container .album{
+    width:1500px;
+    
+    position:absolute;
+    left:410px;
+    top:0px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(40,100px);
+    grid-template-areas: 
+        "one two thr"
+        "one two thr"
+        "fou two thr"
+        "fou fiv thr"
+        "fou fiv six"
+        "fou fiv six"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "eig sev sev"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e11 e11 e13"
+        "e14 e14 e14"
+        "e14 e14 e14"
+        "e14 e14 e14"
+        "e14 e14 e14"
+
+        "e15 e16 e17"
+        "e15 e16 e17"
+        "e15 e16 e20"
+        "e15 e19 e20"
+        "e18 e19 e20"
+        "e18 e19 e20"
+        "e21 e21 e22"
+        "e21 e21 e22"
+        "e21 e21 e22"
+        "e21 e21 e22"
+        "e23 e23 e22"
+        "e23 e23 e22"
+        "e23 e23 e22"
+        "e23 e23 e22"
+        "e24 e25 e26"
+        "e24 e25 e26"
+        "e24 e25 e26"
+        "e24 e25 e26"
+        ;
+    
+        
+
+}
+.container .img{
+    background: #333;
+    background-size: cover;
+    border:1px black solid;
+    border-radius:11px;
+}   
+
+@media screen and (max-width: 727px)
+{
+    .container .album{
+       width:1100px;
+      zoom:0.3; 
+       overflow-x:hidden;
+    }
+}
