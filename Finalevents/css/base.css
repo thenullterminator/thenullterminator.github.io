@@ -44,7 +44,7 @@ body {
 	pointer-events: none;
 	border-radius: 50%;
 	opacity: 0.4;
-	background: var(--color-link);
+	background: black;
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
 }
 
