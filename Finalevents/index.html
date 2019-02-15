@@ -10,8 +10,36 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/base.css" />
 		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	
+	
+		<style>
+			.spin {
+			
+			-webkit-animation:spin 4s linear infinite;
+			-moz-animation:spin 4s linear infinite;
+			animation:spin 4s linear infinite;
+		}
+		@-moz-keyframes spin { 100% { -moz-transform: rotateY(360deg); } }
+		@-webkit-keyframes spin { 100% { -webkit-transform: rotateY(360deg); } }
+		@keyframes spin { 100% { -webkit-transform: rotateY(360deg); transform:rotateY(360deg); } }
+
+		#element
+		{
+			z-index:99999;
+		}
+			</style>
+	
+	
+	
 	</head>
-	<body class="loading">
+	<body onload="spinoff()">
+
+
+		<div id="element" style="display:block;position:absolute;left:45%;top:40%">
+            <img class="spin" src="img/logo.svg" style="width:24%;">
+        </div>
+
+
 
 			
 					<div id="btn">
@@ -271,6 +299,9 @@
 		</main>
 
 		
+
+
+
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/masonry.pkgd.min.js"></script>
 		<script src="js/charming.min.js"></script>
