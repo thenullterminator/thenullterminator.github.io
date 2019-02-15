@@ -7,7 +7,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 body {
 	--color-text: #4800d4;
-    --color-bg: #e8e8e8;
+    --color-bg: black;
     --color-link: #ec1752;
     --color-link-hover: #eb1851;
     --color-info: #272526;
@@ -29,7 +29,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background:black;
+	background: var(--color-bg);
 }
 
 .js .loading::after {
@@ -44,7 +44,7 @@ body {
 	pointer-events: none;
 	border-radius: 50%;
 	opacity: 0.4;
-	background: black;
+	background: var(--color-link);
 	animation: loaderAnim 0.7s linear infinite alternate forwards;
 }
 
