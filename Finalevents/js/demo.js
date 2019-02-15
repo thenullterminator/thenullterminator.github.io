@@ -574,12 +574,4 @@ window.addEventListener('keydown', function (event) {
 
 
 
-} 
-    
-function  spinoff()
- {
-	 document.getElementById("element").style.display="none";
-   
- }
- 
-
+}
