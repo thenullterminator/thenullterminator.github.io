@@ -157,6 +157,31 @@ h1 {
 
 
 
+body {
+	--color-text: #99a3bb;
+    --color-bg: #2b313e;
+    --color-link: #59647e;
+    --color-link-hover: #cc8678;
+    --color-overlay: #451a11;
+    --color-tagline: #c69f64;
+
+	background-color: var(--color-bg);
+	font-family: Futura, 'IBM Plex Sans', Arial, sans-serif;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.body-new::before {
+	content: '\00D7';
+	font-size: 300vw;
+	color: rgba(0,0,0,0.05);
+	position: fixed;
+	top: 0vh;
+	left: -50%;
+	line-height: 0.2;
+	font-weight: normal;
+}
 
 
 
@@ -167,7 +192,7 @@ h1 {
 
 
 
-
+/*
 
 body {
 	--color-text: #4800d4;
@@ -185,7 +210,7 @@ body {
 	background-color: var(--color-bg);
 	overflow-x: hidden !important;
 }
-
+*/
 /* Page Loader */
 .js .loading::before {
 	content: '';
@@ -360,7 +385,8 @@ main {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: var(--grid-item-bg);
+	background: linear-gradient(45deg, rgb(53, 53, 54), rgb(20, 17, 17));
+
 }
 
 .grid__item-img {
@@ -381,7 +407,7 @@ main {
 }
 
 .grid__item-title {
-	font-family: 'Crimson Text', serif;
+	color:goldenrod;
 	font-weight: 510;
 	font-size:130%;
 	letter-spacing: 1px;
@@ -395,11 +421,10 @@ main {
 	transform-origin: 0 50%;
 	transform:translateX(0%);
 	transform: translateY(0%);
-	color:rgb(12, 11, 11);
 }
 
 .grid__item-number {
-	font-family: 'Crimson Text', serif;
+
 	font-weight: bold;
 	position: absolute;
 	right: 0;
@@ -410,6 +435,7 @@ main {
 
 .grid__item-number > span {
 	display: inline-block;
+	
 }
 
 .content {
@@ -503,11 +529,7 @@ main {
 	font-size: 1.6rem;
 	font-weight: 800;
 	margin: 4rem auto;
-	background-image: linear-gradient(to right,rgba(25, 190, 25, 0.774),rgba(10, 117, 10, 0.801));
-    -webkit-background-clip: text;
-    -moz-background-clip:text;
-    -moz-color:transparent;
-    color:transparent;
+
 }
 
 .content__item-text {
@@ -516,9 +538,11 @@ main {
 	font-size:1.3rem;
 	font-weight:500;
 	font-family: 'Crimson Text', serif !important;
+	
 }
 
 .content__item-text p {
+	color:white !important;
 	margin:auto;
 	}
 
@@ -577,25 +601,22 @@ main {
 }
 
 @media screen and (min-width: 55em) {
-
-
-
 .grid__item-title {
 	font-family: 'Crimson Text', serif;
-	font-weight: 510;
-	font-size:130%;
+	font-weight: 540;
+	font-size:140%;
 	letter-spacing: 1px;
 	position: absolute;
-	left: 0;
+	left: -6%;
 	top: 0;
 	margin: 0 0 0 1rem;
 	-webkit-writing-mode: vertical-rl;
 	writing-mode: vertical-rl;
-	transform: rotate(180deg);
+	transform: rotate(720deg);
 	transform-origin: 0 50%;
 	transform:translateX(0%);
 	transform: translateY(0%);
-	color:rgb(12, 11, 11);
+	color:gold;
 }
 
 	a{
@@ -708,7 +729,8 @@ main {
   		column-count: 1;
 		  column-gap: 1%;
 		  width:60%;
-		  text-align: center;
+			text-align: center;
+			color:white !important;
   	}
 	.content__item-img {
 		max-width: none;
