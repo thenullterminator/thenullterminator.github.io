@@ -42,14 +42,14 @@
 		return { x : posx, y : posy }
 	};
 	// Returns the rotation angle of an element.
-	const getAngle = (el) => {
+	/*const getAngle = (el) => {
 		const st = window.getComputedStyle(el, null);
 		const tr = st.getPropertyValue('transform');
 		let values = tr.split('(')[1];
 		values = values.split(')')[0];
 		values = values.split(',');
 		return Math.round(Math.asin(values[1]) * (180/Math.PI));
-	};
+	};*/
 	// Scroll control functions. Taken from https://stackoverflow.com/a/4770179.
 	const keys = {37: 1, 38: 1, 39: 1, 40: 1};
 	const preventDefault = (e) => {
@@ -103,12 +103,12 @@
 			// Configuration for when moving/tilting the elements on hover.
 			this.tiltconfig = {   
                 title: {translation : {x: [-8,8], y: [4,-4]}},
-                number: {translation : {x: [-5,5], y: [-10,10]}},
-                img: {translation : {x: [-15,15], y: [-10,10]}}
+                number: {translation : {x: [-5,5], y: [-3,3]}},
+                img: {translation : {x: [-5,5], y: [-6,6]}}
 			};
 			// Get the rotation angle value of the image element.
 			// This will be used to rotate the DOM.bg to the same value when expanding/opening the item.
-			this.angle = getAngle(this.DOM.tilt.img);
+			//this.angle = getAngle(this.DOM.tilt.img);
 			// Init/Bind events.
             this.initEvents();
 		}
@@ -132,7 +132,7 @@
 					ease: Expo.easeOut,
 					scale: type === 'mouseenter' ? 1.15 : 1
 				});
-				// Animate the number letters.
+				//Animate the number letters.
 				this.DOM.numberLetters.forEach((letter,pos) => {
 					TweenMax.to(letter, .2, {
 						ease: Quad.easeIn,
@@ -261,17 +261,16 @@
 			setTimeout(() => {
 				
 				this.DOM.titleLetters.forEach((letter,pos) => {
-					TweenMax.to(letter, !withAnimation ? 0 : show ? .6 : .3, {
+					TweenMax.to(letter,!withAnimation ? 0 : show ? 4 : 1,{
 						ease: show ? Back.easeOut : Quart.easeIn,
-						delay: !withAnimation ? 0 : show ? pos*.05 : (this.titleLettersTotal-pos-1)*.04,
-						startAt: show ? {y: '50%', opacity: 0} : null,
+						delay: !withAnimation ? 0 : show ? pos*.02 : (this.titleLettersTotal-pos-1)*0.05,
+						startAt: show ? {y: '50%', opacity: 0.9} : null,
 						y: show ? '0%' : '50%',
-						opacity: show ? 1 : 0
+						opacity: show ? 0 : 0
 					});
 				});
 				this.DOM.subtitle.style.opacity = show ? 1 : 0;
 				this.DOM.text.style.opacity = show ? 1 : 0;
-
 			}, withAnimation ? delay*1000 : 0 );
 		}
     }
@@ -542,4 +541,37 @@
 			fitWidth: true
 		});
 	});
+
+
+
+	var sidebarBox = document.querySelector('#box'),
+sidebarBtn = document.querySelector('#btn'),
+pageWrapper = document.querySelector('#page-wrapper');
+
+sidebarBtn.addEventListener('click', function (event) {
+		sidebarBtn.classList.toggle('active');
+		sidebarBox.classList.toggle('active');
+});
+
+pageWrapper.addEventListener('click', function (event) {
+
+		if (sidebarBox.classList.contains('active')) {
+				sidebarBtn.classList.remove('active');
+				sidebarBox.classList.remove('active');
+		}
+});
+
+window.addEventListener('keydown', function (event) {
+
+		if (sidebarBox.classList.contains('active') && event.keyCode === 27) {
+				sidebarBtn.classList.remove('active');
+				sidebarBox.classList.remove('active');
+		}
+});
+
+
+
+
+
+
 }
