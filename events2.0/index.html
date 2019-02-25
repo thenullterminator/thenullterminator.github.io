@@ -2,57 +2,45 @@
 <html lang="en">
     <head>
 		<meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="keywords" content="html5, responsive, image gallery, masonry, picture, images, sizes, fluid, history api, visibility api"/>
         <link rel="shortcut icon" href="../favicon.ico"> 
 				<link rel="stylesheet" type="text/css" href="css/base.css" />
 				<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 				<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<script src="js/modernizr.custom.70736.js"></script>
+		    <script src="js/modernizr.custom.70736.js"></script>
 		<noscript><link rel="stylesheet" type="text/css" href="css/noJS.css"/></noscript>
 		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+		<noscript></noscript>
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 		<style>
 		
 
-			body{
+			html{
    
-   overflow-x:hidden; 
+	 overflow-x:hidden; 
+	 width:100%;
 }
+/* @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"); */
+ 
+ .container
+{
+
+} 
+
 
 .container3{
-   width: 90vw;
-   margin: 5vw ;
+	width: 90vw;
+	 margin: 5vw ;
+	margin-left:10vw;
+	margin-top:3vw;
 }
 
 
-.flip-box-inner {
-   position: relative;
-   width: 100%;
-   height: 100%;
-   text-align: center;
-   transition: transform 2s;
-   transform-style: preserve-3d;
- }
- 
-  .flip-box-inner:hover {
-   transform: rotateY(180deg);
- }
-
-
-.flip-box-inner1 {
-   position: relative;
-   width: 100%;
-   height: 100%;
-   text-align: center;
-   transition: transform 5s;
-   transform-style: preserve-3d;
-   transform: rotateY(720deg);
- }
  
  .container3{
-	 position:relative;
-	 left:-62%;
+	 
  }
 
 
@@ -61,15 +49,15 @@
 }
 
 .container3 .album{
-   width:1300px;
+   width:60vw;
    
- position:relative;
+ 
 
 
    display: grid;
-   grid-gap: 100px;
+   grid-gap: 4.5vw;
    grid-template-columns: repeat(3,1fr);
-   grid-template-rows: repeat(3,120px);
+   grid-template-rows: repeat(3,4.6vw);
    grid-template-areas: 
 	   "one two thr"
 	   "one two thr"
@@ -85,21 +73,10 @@
    border:1px black solid;
 }   
 
-@media screen and (max-width: 727px)
-{
-   .container3 .album{
-	  width:1100px;
-	 zoom:0.3; 
-	  overflow-x:hidden;
-   }
-}
-
-
-
 #up
 {
 	position:fixed;
-	top:90%;left:95%;
+	top:47vw;left:95vw;
 	display:none;
 	z-index:99999;
 }
@@ -188,8 +165,39 @@
 
 
 
+.main
+{
+	/* background-color:black; */
+	margin:0 auto;
+	max-width: 85vw;;
+}
 
 
+
+
+@media screen and (max-width: 727px)
+{
+   h1 {
+		 position:relative;
+		 left:35vw;
+		 top:8vw;
+		 font-size:20vw !important;
+	 }
+
+	 
+ div.container2
+ {
+	 width:71%;
+	 height:3%;
+	margin: 0 auto;
+	 padding: 2em 1em;
+	 text-align: center;
+	 margin-bottom:6%;
+	 margin-top:2%;
+	 border: 1px solid white;
+ }
+
+} 
 
 
 
@@ -207,15 +215,15 @@
 				<div class="header-bar">
 					<div class="container-fluid">
 						<div class="row align-items-center">
-							<div class="col-10 col-lg-2 order-lg-1">
+							<div >
 								<div class="site-branding">
 									<div class="site-title">
 										<a href="#"><img src="images/logo.svg" alt="logo" ></a>
 									</div><!-- .site-title -->
 								</div><!-- .site-branding -->
 							</div><!-- .col -->
-							<div class="col-10 col-lg-2 order-lg-1">
-							<div class="close-btn">
+							<div >
+							<div class="close-btn closeicon">
 								<a href="#"><img src="images/close1.svg" alt="close"></a>
 							</div>
 							</div>
@@ -242,39 +250,63 @@
 					  </div>
 
 		    	<div id="up">
-				  <a href="#filter"><i style="font-size:300%;" class="fas fa-arrow-up"></i></a>
+				  <a href="#filter"><i style="font-size:2.5vw;" class="fas fa-arrow-up"></i></a>
 				  </div>
 
 
 
-					  <div class="main">
-          	<div id="flagship" style="position:relative;left:-52%;font-size:120%; font-family: 'Source Code Pro', monospace;">
+				
+
+
+					  <div class="main" style="margin:0 auto;">
+
+<!-- 								
+					<div class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Modal Header</h4>
+									</div>
+									<div class="modal-body">
+										<p>This is a large modal.</p>
+									</div>
+									<div class="modal-footer">
+										
+									</div>
+								</div>
+							</div>
+						</div> -->
+						
+						
+
+          	<div id="flagship" style="font-size:1.7vw;margin-left:10vw; font-family: 'Source Code Pro', monospace;">
 								FLAGSHIP EVENTS
 							</div>
 						
-							<div style="border-top:1px white solid;width:970px;position:relative;margin-top:-2.5%;;left:-15%;"></div>
+							<div style="border-top:0.1vw white solid;width:44vw;position:relative;left:26vw;top:-0.8vw"></div>
 
-
+						
 
 						<div class="container3" >
 							<div class="album">
-								<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
+								<div  class="img hovereffect photo" style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a data-toggle="modal" href="#myModal" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 								</div>
-								<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
+								<div  class="img hovereffect photo " style="grid-area: two;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										
 										</div>
 								</div>
-								<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
+								<div  class="img hovereffect photo" style="grid-area: thr;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-												<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+												<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 										
 								</div>
@@ -288,20 +320,20 @@
 									<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-												<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+												<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 										
 								</div>	</div>
@@ -310,32 +342,32 @@
 						
 
 
-							<div id="special" style="position:relative;left:-52%;font-size:120%; font-family: 'Source Code Pro', monospace;">
+							<div id="special" style="font-size:1.7vw;margin-left:10vw; font-family: 'Source Code Pro', monospace;">
 								SPECIAL EVENTS
 							</div>
 						
+							<div style="border-top:0.1vw white solid;width:44vw;position:relative;left:26vw;top:-0.8vw"></div>
 
-							<div style="border-top:1px white solid;width:970px;position:relative;margin-top:-2.5%;;left:-17%;"></div>
-
+							
 						<div class="container3" >
 							<div class="album">
 								<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-												<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+												<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 										
 								</div></div>
@@ -346,20 +378,20 @@
 									<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-												<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+												<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 										
 								</div></div>
@@ -367,11 +399,11 @@
 
 
 
-							<div id="coding" style="position:relative;left:-52%;font-size:120%; font-family: 'Source Code Pro', monospace;">
+							<div id="coding" style="font-size:1.7vw;margin-left:10vw; font-family: 'Source Code Pro', monospace;">
 								CODING EVENTS
 							</div>
 						
-							<div style="border-top:1px white solid;width:1010px;position:relative;margin-top:-2.5%;;left:-20%;"></div>
+							<div style="border-top:0.1vw white solid;width:44vw;position:relative;left:26vw;top:-0.8vw"></div>
 
 
 						<div class="container3" >
@@ -379,20 +411,20 @@
 								<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-									<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+									<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									</div>
 							</div>
 							<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-									<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+									<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									
 									</div>
 							</div>
 							<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-											<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+											<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									</div>
 									
 							</div></div>
@@ -403,20 +435,20 @@
 									<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-												<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+												<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 										
 								</div></div>
@@ -425,11 +457,11 @@
 						
 
 
-							<div id="quizzing" style="position:relative;left:-52%;font-size:120%; font-family: 'Source Code Pro', monospace;">
+							<div id="quizzing" style="font-size:1.7vw;margin-left:10vw; font-family: 'Source Code Pro', monospace;">
 								QUIZZING EVENTS
 							</div>
 						
-							<div style="border-top:1px white solid;width:970px;position:relative;margin-top:-2.5%;;left:-15%;"></div>
+							<div style="border-top:0.1vw white solid;width:44vw;position:relative;left:26vw;top:-0.8vw"></div>
 
 
 						<div class="container3" >
@@ -437,20 +469,20 @@
 								<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-									<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+									<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									</div>
 							</div>
 							<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-									<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+									<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									
 									</div>
 							</div>
 							<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-											<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+											<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									</div>
 									
 							</div></div>
@@ -461,20 +493,20 @@
 									<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-												<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+												<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 										
 								</div></div>
@@ -483,10 +515,11 @@
 						
 
 
-							<div id="gaming" style="position:relative;left:-52%;font-size:120%; font-family: 'Source Code Pro', monospace;">
+							<div id="gaming" style="font-size:1.7vw;margin-left:10vw; font-family: 'Source Code Pro', monospace;">
 								GAMING EVENTS
 							</div>
-							<div style="border-top:1px white solid;width:1010px;position:relative;margin-top:-2.5%;;left:-20%;"></div>
+						
+							<div style="border-top:0.1vw white solid;width:44vw;position:relative;left:26vw;top:-0.8vw"></div>
 
 						
 						<div class="container3" >
@@ -494,20 +527,20 @@
 								<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-									<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+									<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									</div>
 							</div>
 							<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-									<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+									<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									
 									</div>
 							</div>
 							<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-											<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+											<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									</div>
 									
 							</div>	</div>
@@ -518,20 +551,20 @@
 									<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-												<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+												<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 										
 								</div></div>
@@ -540,11 +573,11 @@
 						
 
 
-							<div id="informal" style="position:relative;left:-52%;font-size:120%; font-family: 'Source Code Pro', monospace;">
+							<div id="informal" style="font-size:1.7vw;margin-left:10vw; font-family: 'Source Code Pro', monospace;">
 								INFORMAL EVENTS
 							</div>
 						
-							<div style="border-top:1px white solid;width:960px;position:relative;margin-top:-2.5%;;left:-15%;"></div>
+							<div style="border-top:0.1vw white solid;width:44vw;position:relative;left:26vw;top:-0.8vw"></div>
 
 
 						<div class="container3" >
@@ -552,20 +585,20 @@
 								<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-									<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+									<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									</div>
 							</div>
 							<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-									<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+									<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									
 									</div>
 							</div>
 							<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 									<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 											<div class="overlay" style="margin-top:60%;">
-											<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+											<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 									</div>
 									
 							</div></div>
@@ -576,20 +609,20 @@
 									<div  class="img hovereffect " style="grid-area: one;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: two;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-										<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+										<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										
 										</div>
 								</div>
 								<div  class="img hovereffect " style="grid-area: thr;background-position: centre;">
 										<img class="img-responsive" src="image/CodingEvents/LangChallenge-min.jpg" style="width:100%;height:100%" alt="">
 												<div class="overlay" style="margin-top:60%;">
-												<h2>	<a href="#" style="color:white;font-size:200%;font-family: 'Source Code Pro', monospace;">View More</a></h2>
+												<h2>	<a href="#" style="color:white;font-size:1.5vw;font-family: 'Source Code Pro', monospace;">View More</a></h2>
 										</div>
 										
 								</div></div>
@@ -605,8 +638,9 @@
 
 
 
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
 		<script src="js/jquery.masonry.min.js"></script>
 		<script src="js/jquery.history.js"></script>
 		<script src="js/js-url.min.js"></script>
