@@ -125,7 +125,7 @@ h1 {
            	font-weight: 800;
            }
            p{          	
-           	background-image: linear-gradient(to right bottom,rgb(65, 66, 66),#000);
+           	background-image: linear-gradient(to right bottom,teal,#000);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -moz-background-clip:text;
